@@ -60,7 +60,7 @@ const userController = {
                 }
                 res.json({ message: 'User and associated thoughts deleted!' });
             })
-                .catch(err => res.status(400).json(err));
+            .catch(err => res.status(400).json(err));
     },
 
     addFriend({ params }, res) {
